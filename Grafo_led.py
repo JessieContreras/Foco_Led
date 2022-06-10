@@ -40,4 +40,15 @@ class Grafico:
         for llave in self.m_adj_lista.keys():
             #Imprime en orden el número de nodos ingresados con los datos almacenados en el diccionaro
             print("nodo", llave, ": ", self.m_adj_lista[llave])
+            
+     #En el constrructor se agrega los atributos de la instancia y el nodo inicial.
+    def bfs_traversal(self, iniciar_nodo):
+        #el atributo visitado almacena en una lista los nodos recorridos sin ser repetidos
+        visitado = set()
+        #Almacena los datos despues de ser visitados    
+        queue = Queue()
+ 
+        # Mediante la lista de visitados y la cola se procede a añadir el nodo.
+        queue.put(iniciar_nodo)
+        visitado.add(iniciar_nodo)
              
