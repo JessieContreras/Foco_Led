@@ -38,3 +38,24 @@ def Foco_Led():
         print("0. Blanco")
         print("1. Azul")
         print("2. Rojo")
+        
+        opcionColor = input("Inserte el color del Foco Led Inteligente: ")
+         
+        if opcionColor == '0':
+                print("Color Blanco activado")
+                aumento +=1 #Costo
+                print("El costo actual es: " +str(aumento)) 
+        if opcionColor == '1':
+                print("Color Azul activado")
+                aumento +=1
+                print("El costo actual es: " +str(aumento)) 
+        elif opcionColor == '2':
+                print("Color Rojo activado")
+                aumento +=1
+                print("El costo actual es: " +str(aumento)) 
+        else:
+        
+            print("---FIN DEL PROCESO---")
+
+    
+Foco_Led()
