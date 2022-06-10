@@ -51,4 +51,19 @@ class Grafico:
         # Mediante la lista de visitados y la cola se procede a añadir el nodo.
         queue.put(iniciar_nodo)
         visitado.add(iniciar_nodo)
+        
+      #Mientras no tenga colas vacías.
+        while not queue.empty():
+            # Puede desencolar los vértices.
+            actual_nodo = queue.get()
+            #Imprime el nodo actual y el final.
+            print(actual_nodo, end = " ")
+            #Obtiene todos los vértices adyacentes de los nodos, agregando un conector a cada nodo.
+            for (siguiente_nodo, weight) in self.m_adj_lista[actual_nodo]:
+                #Verifica que el siguiente nodo no ha sido visitado.
+                if siguiente_nodo not in visitado:
+                    #Procede a ponerlo dentro de una cola.
+                    queue.put(siguiente_nodo)
+                    #Agrega los datos del siguiente módulo visitado.
+                    visitado.add(siguiente_nodo)
              
