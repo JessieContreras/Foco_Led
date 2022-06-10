@@ -13,3 +13,14 @@ def Foco_Led():
     opcionMe = input("Ingrese la ubicación del Foco LED Inteligente: ")
     #Crea una función que verifica el espacio del foco
     # Si el foco está en la en la habitación se debe ingresar el número 1.
+    if opcionMe == '1':
+        #Imprime el menú de estado del foco si está apagado se ingresa 1 y si está encendido se ingresa 2
+        print("Seleccione el estado de la Habitación: ")
+        print("1. Apagado")
+        print("2. Encendido")
+        
+        #Ingresar el estado de la cafetera por medio de los números indicados
+        opcionEstado = input("Inserte el estado del Foco Led Inteligente: ")
+        
+        if opcionEstado == '1':
+            opcionEstado = '2'
