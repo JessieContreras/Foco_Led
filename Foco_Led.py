@@ -24,3 +24,17 @@ def Foco_Led():
         
         if opcionEstado == '1':
             opcionEstado = '2'
+            
+            
+            if opcionEstado == '1':
+                print("Foco Apagado")
+               
+            elif opcionEstado == '2':
+                 #Muestra un mensaje diciendo que el foco está encendido
+                print("El foco se encuentra Encedido ")
+            else:
+                print("Ingrese el color:") #Colores a escoger
+        print("Seleccione el color: ")
+        print("0. Blanco")
+        print("1. Azul")
+        print("2. Rojo")
