@@ -17,4 +17,16 @@ class Grafico:
         #Se implementa una lista adyacente mediante un diccionario.
         '''Para agregar un diccionario tenemos como parámetro crear un objeto por lista agregando
         un bucle de recorrido que empieza de nodo=0 hasta el rango asignado'''
-        self.m_adj_lista = {nodo: set() for nodo in self.m_nodos}     
+        self.m_adj_lista = {nodo: set() for nodo in self.m_nodos} 
+        
+        # Se agrega un constructor instanciado declarando como atributo dos nodos y el peso.
+    '''Permite agregar los dos nodos y el peso de los bordes para cada nodo, verificando si el nodo es dirigido 
+     o no, cuando el nodo es dirigido debe verificar que el siguiente tenga el permiso o la dirección correcta 
+     para continuar al siguiente nodo, cuando no es dirigido puede ir por cualquier dirección'''
+    def add_edge(self, nodo1, nodo2, weight=1):
+        #Si el nodo1 es dirigido agrega un vertice del nodo1 al nodo2
+        self.m_adj_lista[nodo1].add((nodo2, weight))
+        # Cuando el nodo no está dirigido.
+        if not self.m_dirigido:
+            #Si el nodo2 no es dirigido agrega un vertice del nodo2 al nodo1
+             self.m_adj_lista[nodo2].add((nodo1, weight))
