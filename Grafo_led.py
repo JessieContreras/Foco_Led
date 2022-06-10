@@ -110,4 +110,12 @@ if __name__ == "__main__":
     g.add_edge(valor18,valor20,valor6)
     g.add_edge(valor15,valor18,valor5)
     g.add_edge(valor13,valor16,valor2)
+    
+      # Imprime las listas adyacentes  con su respectivo nodo y peso del borde.
+    g.print_adj_lista()
+    #Imprime el recorrido de la anchura que tiene el nodo.
+    print ("Indica el recorrido del grafo de BFS apartir del nodo 1")
+    #Indica el número de búsqueda de anchura.
+    g.bfs_traversal(1)
+    print()
              
