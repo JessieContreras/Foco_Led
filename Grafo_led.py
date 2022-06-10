@@ -30,3 +30,14 @@ class Grafico:
         if not self.m_dirigido:
             #Si el nodo2 no es dirigido agrega un vertice del nodo2 al nodo1
              self.m_adj_lista[nodo2].add((nodo1, weight))
+    
+    ''' Para imprimir la lista de los nodos y su peso de borde se debe agregar la instancia como atributo, 
+    agregar un bucle de recorrido que permita imprimir la posición del nodo, con los respectivos datos 
+    almacenados en el diccionario de la lista adyacente imprimiendo en el orden del primer nodo'''
+    # Imprime la representación gráfica del atributo.
+    def print_adj_lista(self):
+        #Realiza un sentencia identificando el número de llaves que están conectadas al nodo.
+        for llave in self.m_adj_lista.keys():
+            #Imprime en orden el número de nodos ingresados con los datos almacenados en el diccionaro
+            print("nodo", llave, ": ", self.m_adj_lista[llave])
+             
