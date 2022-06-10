@@ -66,4 +66,31 @@ class Grafico:
                     queue.put(siguiente_nodo)
                     #Agrega los datos del siguiente módulo visitado.
                     visitado.add(siguiente_nodo)
+                    
+if __name__ == "__main__":
+       
+    # Crea una instancia de gráficos identificando que no está dirigido.
+    g = Grafico(22, dirigido=False)
+    #Pide al usuario ingresar datos
+    valor0=int(input("Ingrese un número: "))
+    valor1=int(input("Ingrese un número: "))
+    valor2=int(input("Ingrese un número: "))
+    valor3=int(input("Ingrese un número: "))
+    valor4=int(input("Ingrese un número: "))
+    valor5=int(input("Ingrese un número: "))
+    valor6=int(input("Ingrese un número: "))
+    valor7=int(input("Ingrese un número: "))
+    valor8=int(input("Ingrese un número: "))
+    valor9=int(input("Ingrese un número: "))
+    valor10=int(input("Ingrese un número: "))
+    valor12=int(input("Ingrese un número: "))
+    valor13=int(input("Ingrese un número: "))
+    valor14=int(input("Ingrese un número: "))
+    valor15=int(input("Ingrese un número: "))
+    valor16=int(input("Ingrese un número: "))
+    valor17=int(input("Ingrese un número: "))
+    valor18=int(input("Ingrese un número: "))
+    valor19=int(input("Ingrese un número: "))
+    valor20=int(input("Ingrese un número: "))
+    valor11=int(input("Ingrese un número: "))
              
