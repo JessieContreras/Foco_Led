@@ -93,4 +93,21 @@ if __name__ == "__main__":
     valor19=int(input("Ingrese un número: "))
     valor20=int(input("Ingrese un número: "))
     valor11=int(input("Ingrese un número: "))
+    
+    # Agrega los atributos del gráficos con sus respectivos pesos de border.
+    g.add_edge(valor0,valor1,valor1)   
+    g.add_edge(valor0,valor2,valor2)
+    g.add_edge(valor2,valor1,valor4)
+    g.add_edge(valor1,valor4,valor6)
+    g.add_edge(valor4,valor3,valor5)
+    g.add_edge(valor3,valor2,valor3)
+    g.add_edge(valor12,valor4,valor6)
+    g.add_edge(valor14,valor12,valor5)
+    g.add_edge(valor17,valor15,valor3)
+    g.add_edge(valor11,valor13,valor5)   
+    g.add_edge(valor13,valor15,valor8)
+    g.add_edge(valor14,valor8,valor7)
+    g.add_edge(valor18,valor20,valor6)
+    g.add_edge(valor15,valor18,valor5)
+    g.add_edge(valor13,valor16,valor2)
              
